@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#28536F',   // Blue
+                        secondary: '#A7B255', // Olive
+                        accent: '#D5A70D',    // Gold
+                        lightbg: '#F3F092',   // Soft yellow
+                        muted: '#728E9D'      // Slate blue
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Productos Derbys</title>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-primary shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
+        <img src="../assets/images/logo.png" alt="Logo" class="h-12">
+
+        <nav class="space-x-6 font-medium text-white">
+            <a href="inicio.html" class="text-accent">Inicio</a>
+            <a href="productos.html" class="hover:text-accent">Productos</a>
+            <a href="nosotros.html" class="hover:text-accent">Nosotros</a>
+            <a href="contacto.html" class="hover:text-accent">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="bg-lightbg py-24 text-center">
+    <h1 class="text-5xl font-extrabold text-primary">
+        Caracol, Abulón y Botanas de Calidad Premium
+    </h1>
+
+    <p class="mt-6 text-lg max-w-2xl mx-auto text-muted">
+        Distribución confiable de caracol, abulón y botanas como cacahuates
+        y churros, ideales para restaurantes, tiendas y eventos.
+    </p>
+
+    <a href="productos.html"
+       class="inline-block mt-8 bg-accent text-primary px-8 py-4 rounded-lg
+            text-lg font-semibold shadow hover:bg-secondary transition">
+        Ver Catálogo
+    </a>
+</section>
+
+
+<!-- CATEGORIES -->
+<section class="max-w-7xl mx-auto py-20 px-6 grid md:grid-cols-3 gap-10">
+
+    <!--Caracol-->
+    <div class="bg-white shadow rounded-lg overflow-hidden text-center">
+
+        <!-- Portrait image container -->
+        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 flex items-center justify-center">
+            <img
+                    src="../assets/images/caracol.png"
+                    alt="Caracol"
+                    class="h-full w-auto object-contain"
+            />
+        </div>
+
+        <!-- Content -->
+        <div class="p-6">
+            <h3 class="text-2xl font-bold text-primary">Caracol</h3>
+            <p class="mt-2 text-muted">
+                Caracol derbys caja de 24 latas
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="bg-white shadow rounded-lg overflow-hidden text-center">
+
+        <!-- Portrait image container -->
+        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 flex items-center justify-center">
+            <img
+                    src="../assets/images/abulon.jpg"
+                    alt="Abulon"
+                    class="h-full w-auto object-contain"
+            />
+        </div>
+
+        <!-- Content -->
+        <div class="p-6">
+            <h3 class="text-2xl font-bold text-primary">Abulón</h3>
+            <p class="mt-2 text-muted">
+                Abulon de cultivo derbys caja de 24 latas
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="bg-white shadow rounded-lg overflow-hidden text-center">
+
+        <!-- Portrait image container -->
+        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 flex items-center justify-center">
+            <img
+                    src="../assets/images/botanas.jpg"
+                    alt="Botanas"
+                    class="h-full w-auto object-contain"
+            />
+        </div>
+
+        <!-- Content -->
+        <div class="p-6">
+            <h3 class="text-2xl font-bold text-primary">Botanas</h3>
+            <p class="mt-2 text-muted">
+                Botanas derbys
+                90g de producto
+                Churros de maiz ,cacahuate japones y rielito
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<footer class="bg-primary text-white mt-20">
+    <div class="max-w-7xl mx-auto px-6 py-14 grid gap-10 md:grid-cols-3">
+
+        <!-- Company Info -->
+        <div>
+            <h3 class="text-2xl font-bold text-accent mb-4">
+                Productos Derbys
+            </h3>
+            <p class="text-sm text-gray-200 leading-relaxed">
+                Distribución confiable de caracol, abulón y botanas como cacahuates
+                y churros, ideales para restaurantes, tiendas y eventos.
+            </p>
+        </div>
+
+        <!-- Contact Section -->
+        <div>
+            <h4 class="text-xl font-semibold mb-4">Contacto</h4>
+            <p class="text-sm mb-2">📞 Teléfono: +52 1 646 947 3645</p>
+            <p class="text-sm mb-4">✉️ derbys.demexico@gmail.com</p>
+
+            <a href="https://wa.me/+5216469473645"
+               class="inline-block bg-secondary text-primary px-5 py-2 rounded-lg
+                font-semibold hover:bg-accent transition">
+                WhatsApp
+            </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <h4 class="text-xl font-semibold mb-4">Enlaces</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="inicio.html" class="hover:text-accent">Inicio</a></li>
+                <li><a href="productos.html" class="hover:text-accent">Productos</a></li>
+                <li><a href="nosotros.html" class="hover:text-accent">Nosotros</a></li>
+                <li><a href="contacto.html" class="hover:text-accent">Contacto</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-muted text-center py-4 text-sm text-gray-200">
+        © 2025 Productos Derbys. Todos los derechos reservados.
+    </div>
+</footer>
+
+</body>
+</html>

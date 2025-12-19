@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#28536F',   // Blue
+                        secondary: '#A7B255', // Olive
+                        accent: '#D5A70D',    // Gold
+                        lightbg: '#F3F092',   // Soft yellow
+                        muted: '#728E9D'      // Slate blue
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Productos | Productos Derbys</title>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-primary shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
+        <img src="../assets/images/logo.png" alt="Logo" class="h-12">
+
+        <nav class="space-x-6 font-medium text-white">
+            <a href="inicio.html" class="hover:text-accent">Inicio</a>
+            <a href="productos.html" class="text-accent">Productos</a>
+            <a href="nosotros.html" class="hover:text-accent">Nosotros</a>
+            <a href="contacto.html" class="hover:text-accent">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+
+<!-- CATALOG -->
+<section class="max-w-7xl mx-auto py-16 px-6">
+    <h1 class="text-4xl font-bold text-center mb-12">Catálogo de Productos</h1>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img src="../assets/images/beef.jpg" class="h-48 w-full object-cover">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Carne de Res Premium</h2>
+                <p class="text-sm text-gray-600 mt-2">
+                    Corte seleccionado para calidad superior.
+                </p>
+                <a href="contacto.html" class="inline-block mt-4 text-red-600 font-semibold">
+                    Solicitar precio →
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img src="../assets/images/pork.jpg" class="h-48 w-full object-cover">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Cerdo Procesado</h2>
+                <p class="text-sm text-gray-600 mt-2">
+                    Ideal para carnicerías y restaurantes.
+                </p>
+                <a href="contacto.html" class="inline-block mt-4 text-red-600 font-semibold">
+                    Solicitar precio →
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img src="../assets/images/chicken.jpg" class="h-48 w-full object-cover">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Pollo Fresco</h2>
+                <p class="text-sm text-gray-600 mt-2">
+                    Distribución diaria garantizada.
+                </p>
+                <a href="contacto.html" class="inline-block mt-4 text-red-600 font-semibold">
+                    Solicitar precio →
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
