@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--Favicons-->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,13 +45,27 @@
 </header>
 
 <section class="max-w-4xl mx-auto py-20 px-6">
-    <h1 class="text-4xl font-bold mb-6">Nosotros</h1>
+    <h1 class="text-4xl font-bold mb-6">Nuestra Mision</h1>
     <p class="text-lg text-gray-700 leading-relaxed">
-        En Productos Derbys nos dedicamos a la distribución de productos cárnicos
-        de alta calidad, cumpliendo con estrictos estándares de higiene, frescura
-        y servicio.
+        <em>Productos Derbys</em> es una marca registrada dedicada a la elaboración y promoción de conservas y productos del mar de alta calidad.
+        Contamos con más de 11 años de experiencia en el mercado nacional, ofreciendo productos que cumplen con los más altos estándares de calidad y sabor.<br><br>
+
+        Entre nuestros productos destacados se encuentra el caracol enlatado DERBYS, reconocido por su excelente calidad y aceptación en el mercado.
+        Además, ofrecemos Atún Ahumado DERBYS en lata con abre fácil, un producto práctico y confiable, ideal para consumidores que buscan conveniencia sin sacrificar el sabor.<br><br>
+
+        Nuestro compromiso es brindar productos cuidadosamente elaborados, utilizando procesos que garantizan frescura,
+        seguridad y satisfacción para nuestros clientes, fortaleciendo así la confianza en la marca DERBYS a lo largo de los años.
     </p>
 </section>
+<div id="footer"></div>
+
+<script>
+    fetch('/components/footer.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('footer').innerHTML = html;
+        });
+</script>
 
 </body>
 </html>

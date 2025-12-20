@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--Favicons-->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,7 +26,11 @@
         }
     </script>
 
-    <title>Productos | Productos Derbys</title>
+    <title>Caracol y Abulón en Lata | Productos Derbys México</title>
+
+    <meta name="description"
+          content="Catálogo de caracol enlatado, abulón de cultivo y silvestre, así como botanas. Distribución nacional para restaurantes, negocios y mayoristas en México.">
+
 </head>
 
 <body class="bg-gray-50 text-gray-800">
@@ -43,50 +53,93 @@
 <!-- CATALOG -->
 <section class="max-w-7xl mx-auto py-16 px-6">
     <h1 class="text-4xl font-bold text-center mb-12">Catálogo de Productos</h1>
+    <p class="sr-only">
+        Catálogo de productos del mar que incluye caracol enlatado, abulón de cultivo
+        y abulón silvestre, así como botanas para distribución nacional en México.
+        Productos dirigidos a restaurantes, negocios y mayoristas.
+    </p>
 
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
 
         <div class="bg-white shadow rounded-lg overflow-hidden">
-            <img src="../assets/images/beef.jpg" class="h-48 w-full object-cover">
+            <img src="../assets/images/caracol.png" alt="Abulón de cultivo DERBYS en lata 454 gramos" class="h-96 w-full object-cover">
             <div class="p-4">
-                <h2 class="text-xl font-bold">Carne de Res Premium</h2>
+                <h2 class="text-xl font-bold">Caracol</h2>
                 <p class="text-sm text-gray-600 mt-2">
-                    Corte seleccionado para calidad superior.
+                    Caracol DERBYS en lata. Presentación en caja con 24 latas, peso neto de 454 g y
+                    200 g de masa drenada. Producto de alta calidad, ideal para restaurantes y
+                    preparaciones especiales.
                 </p>
                 <a href="contacto.html" class="inline-block mt-4 text-red-600 font-semibold">
-                    Solicitar precio →
+                    Solicitar precio de caracol →
+
                 </a>
             </div>
         </div>
 
         <div class="bg-white shadow rounded-lg overflow-hidden">
-            <img src="../assets/images/pork.jpg" class="h-48 w-full object-cover">
+            <img src="../assets/images/abulon.jpg" alt="Caracol enlatado DERBYS presentación 454 gramos" class="h-96 w-full object-cover">
             <div class="p-4">
-                <h2 class="text-xl font-bold">Cerdo Procesado</h2>
+                <h2 class="text-xl font-bold">Abulón</h2>
                 <p class="text-sm text-gray-600 mt-2">
-                    Ideal para carnicerías y restaurantes.
+                    Abulón de cultivo DERBYS en lata. Caja con 24 latas, peso neto de 454 g y
+                    200 g de masa drenada. Seleccionado cuidadosamente para garantizar sabor
+                    y consistencia.
+
                 </p>
                 <a href="contacto.html" class="inline-block mt-4 text-red-600 font-semibold">
-                    Solicitar precio →
+                    Solicitar precio de abulón →
+
                 </a>
             </div>
         </div>
 
         <div class="bg-white shadow rounded-lg overflow-hidden">
-            <img src="../assets/images/chicken.jpg" class="h-48 w-full object-cover">
+            <img src="../assets/images/botanas.jpg" alt="Botanas DERBYS churros de maíz, cacahuate japonés y rielitos" class="h-96 w-full object-cover">
             <div class="p-4">
-                <h2 class="text-xl font-bold">Pollo Fresco</h2>
+                <h2 class="text-xl font-bold">Botanas</h2>
                 <p class="text-sm text-gray-600 mt-2">
-                    Distribución diaria garantizada.
+                    Botanas DERBYS en presentación de 90 g. Variedad que incluye churros de maíz,
+                    cacahuate japonés y rielitos. Perfectas para venta al público y consumo inmediato.
+
                 </p>
                 <a href="contacto.html" class="inline-block mt-4 text-red-600 font-semibold">
-                    Solicitar precio →
+                    Solicitar precio del producto →
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img src="../assets/images/abulon2.jpg" alt="Abulón silvestre grande DERBYS en frasco" class="h-96 w-full object-cover">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Abulón Grande Silvestre</h2>
+                <p class="text-sm text-gray-600 mt-2">
+                    Abulón silvestre grande en frasco. Presentación en caja con 12 frascos.
+                    Producto premium, ideal para platillos gourmet y ocasiones especiales.
+
+                </p>
+                <a href="contacto.html" class="inline-block mt-4 text-red-600 font-semibold">
+                    Solicitar precio de abulón →
                 </a>
             </div>
         </div>
 
     </div>
 </section>
+<p class="sr-only">
+    Productos Derbys ofrece caracol y abulón enlatados, así como botanas,
+    para distribución en todo México, enfocados en el sector restaurantero
+    y comercial.
+</p>
+<div id="footer"></div>
+
+<script>
+    fetch('/components/footer.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('footer').innerHTML = html;
+        });
+</script>
 
 </body>
 </html>

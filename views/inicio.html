@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--Favicons-->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -131,51 +137,16 @@
     </div>
 
 </section>
-<footer class="bg-primary text-white mt-20">
-    <div class="max-w-7xl mx-auto px-6 py-14 grid gap-10 md:grid-cols-3">
+<div id="footer"></div>
 
-        <!-- Company Info -->
-        <div>
-            <h3 class="text-2xl font-bold text-accent mb-4">
-                Productos Derbys
-            </h3>
-            <p class="text-sm text-gray-200 leading-relaxed">
-                Distribución confiable de caracol, abulón y botanas como cacahuates
-                y churros, ideales para restaurantes, tiendas y eventos.
-            </p>
-        </div>
+<script>
+    fetch('/components/footer.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('footer').innerHTML = html;
+        });
+</script>
 
-        <!-- Contact Section -->
-        <div>
-            <h4 class="text-xl font-semibold mb-4">Contacto</h4>
-            <p class="text-sm mb-2">📞 Teléfono: +52 1 646 947 3645</p>
-            <p class="text-sm mb-4">✉️ derbys.demexico@gmail.com</p>
-
-            <a href="https://wa.me/+5216469473645"
-               class="inline-block bg-secondary text-primary px-5 py-2 rounded-lg
-                font-semibold hover:bg-accent transition">
-                WhatsApp
-            </a>
-        </div>
-
-        <!-- Quick Links -->
-        <div>
-            <h4 class="text-xl font-semibold mb-4">Enlaces</h4>
-            <ul class="space-y-2 text-sm">
-                <li><a href="inicio.html" class="hover:text-accent">Inicio</a></li>
-                <li><a href="productos.html" class="hover:text-accent">Productos</a></li>
-                <li><a href="nosotros.html" class="hover:text-accent">Nosotros</a></li>
-                <li><a href="contacto.html" class="hover:text-accent">Contacto</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="border-t border-muted text-center py-4 text-sm text-gray-200">
-        © 2025 Productos Derbys. Todos los derechos reservados.
-    </div>
-</footer>
 
 </body>
 </html>
