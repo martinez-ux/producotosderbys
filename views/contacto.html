@@ -1,93 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!--Favicons-->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#28536F',   // Blue
-            secondary: '#A7B255', // Olive
-            accent: '#D5A70D',    // Gold
-            lightbg: '#F3F092',   // Soft yellow
-            muted: '#728E9D'      // Slate blue
+            primary: '#28536F',
+            secondary: '#A7B255',
+            accent: '#D5A70D',
+            lightbg: '#F3F092',
+            muted: '#728E9D',
+            pinksoft: '#C97A94'
           }
         }
       }
     }
   </script>
 
+  <!-- SEO -->
   <title>Contacto | Productos Derbys</title>
+  <meta name="description"
+        content="Contacto de Productos Derbys y Coleccionables Derbys. Distribución de productos del mar y coleccionables deportivos en México.">
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-pinksoft/30 text-gray-800">
 
 <!-- NAVBAR -->
-<header class="bg-primary shadow">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
-    <img src="../assets/images/logo.png" alt="Logo" class="h-12">
+<header class="bg-primary/95 backdrop-blur shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <img src="../assets/images/logo.png" alt="Productos Derbys Logo" class="h-14">
 
     <nav class="space-x-6 font-medium text-white">
-      <a href="inicio.html" class="hover:text-accent">Inicio</a>
-      <a href="productos.html" class="hover:text-accent">Productos</a>
-      <a href="nosotros.html" class="hover:text-accent">Nosotros</a>
+      <a href="inicio.html" class="hover:text-accent transition">Inicio</a>
+      <a href="productos.html" class="hover:text-accent transition">Productos</a>
+      <a href="nosotros.html" class="hover:text-accent transition">Nosotros</a>
       <a href="contacto.html" class="text-accent">Contacto</a>
     </nav>
   </div>
 </header>
 
+<!-- HEADER -->
+<section class="bg-gradient-to-br from-lightbg via-pinksoft/40 to-lightbg py-24 text-center">
+  <h1 class="text-5xl md:text-6xl font-extrabold text-primary tracking-tight">
+    Contacto
+  </h1>
+</section>
 
-<section class="max-w-3xl mx-auto py-20 px-6">
-  <h1 class="text-4xl font-bold mb-12">Contactos</h1>
+<!-- CONTACTS -->
+<section class="max-w-5xl mx-auto py-24 px-6 grid md:grid-cols-2 gap-10">
 
   <!-- Productos Derbys -->
-  <div class="mb-12 p-6 bg-white shadow rounded-lg border-l-4 border-secondary">
-    <h2 class="text-2xl font-bold text-primary mb-4">
+  <div class="bg-white/90 backdrop-blur rounded-2xl shadow-lg p-8 border-l-4 border-secondary
+              hover:shadow-xl transition-shadow duration-300">
+
+    <h2 class="text-2xl font-semibold text-primary mb-4 tracking-tight">
       Productos Derbys
     </h2>
-    <p>Distribución confiable de caracol, abulón y botanas como cacahuates
-      y churros, ideales para restaurantes, tiendas y eventos.<br><br></p>
-    <p class="mb-2">📞 Teléfono: +52 1 646 947 3645</p>
-    <p class="mb-4">✉️ derbys.demexico@gmail.com</p>
+
+    <p class="text-muted leading-relaxed mb-6">
+      Distribución confiable de caracol, abulón y botanas como cacahuates y
+      churros, ideales para restaurantes, tiendas y eventos.
+    </p>
+
+    <p class="mb-2">📞 <strong>Teléfono:</strong> +52 1 646 947 3645</p>
+    <p class="mb-6">✉️ <strong>Email:</strong> derbys.demexico@gmail.com</p>
 
     <a href="https://wa.me/5216469473645"
-       class="inline-block bg-green-600 text-white px-5 py-2 rounded-lg shadow hover:bg-green-700 transition">
+       class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3
+              rounded-full shadow hover:bg-green-700 hover:shadow-lg transition">
       WhatsApp Productos Derbys
     </a>
   </div>
 
   <!-- Coleccionables Derbys -->
-  <div class="p-6 bg-white shadow rounded-lg border-l-4 border-accent">
-    <h2 class="text-2xl font-bold text-primary mb-4">
+  <div class="bg-white/90 backdrop-blur rounded-2xl shadow-lg p-8 border-l-4 border-accent
+              hover:shadow-xl transition-shadow duration-300">
+
+    <h2 class="text-2xl font-semibold text-primary mb-4 tracking-tight">
       Coleccionables Derbys
     </h2>
-    <p>Coleccionables Derbys se especializa principalmente en cartas y memorabilia
-      de béisbol, ofreciendo tarjetas deportivas originales, artículos de colección
-      y piezas seleccionadas para aficionados, coleccionistas y revendedores.
-      <br><br></p>
 
-    <p class="mb-2">📞 Teléfono: +52 1 646 947 3645</p>
-    <p class="mb-4">✉️ derbyscards@gmail.com</p>
+    <p class="text-muted leading-relaxed mb-6">
+      Especialistas en cartas y memorabilia de béisbol, ofreciendo tarjetas
+      deportivas originales, artículos de colección y piezas seleccionadas
+      para coleccionistas, aficionados y revendedores.
+    </p>
+
+    <p class="mb-2">📞 <strong>Teléfono:</strong> +52 1 646 947 3645</p>
+    <p class="mb-6">✉️ <strong>Email:</strong> derbyscards@gmail.com</p>
 
     <a href="https://wa.me/5216469473645"
-       class="inline-block bg-green-600 text-white px-5 py-2 rounded-lg shadow hover:bg-green-700 transition">
+       class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3
+              rounded-full shadow hover:bg-green-700 hover:shadow-lg transition">
       WhatsApp Coleccionables Derbys
     </a>
   </div>
+
 </section>
 
-
-
-<!--FOOTER-->
+<!-- FOOTER -->
 <div id="footer"></div>
 
 <script>

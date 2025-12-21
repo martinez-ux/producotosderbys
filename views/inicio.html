@@ -1,142 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--Favicons-->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#28536F',   // Blue
-                        secondary: '#A7B255', // Olive
-                        accent: '#D5A70D',    // Gold
-                        lightbg: '#F3F092',   // Soft yellow
-                        muted: '#728E9D'      // Slate blue
+                        primary: '#28536F',
+                        secondary: '#A7B255',
+                        accent: '#D5A70D',
+                        lightbg: '#F3F092',
+                        muted: '#728E9D',
+                        pinksoft: '#C97A94'
                     }
                 }
             }
         }
     </script>
 
-    <title>Productos Derbys</title>
+    <!-- SEO -->
+    <title>Productos Derbys | Caracol, Abulón y Botanas en México</title>
+    <meta name="description"
+          content="Productos Derbys es una marca dedicada a la elaboración y distribución de caracol, abulón y botanas en México. Calidad para restaurantes y negocios.">
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Productos Derbys",
+            "url": "https://productosderbys.com",
+            "logo": "https://productosderbys.com/assets/images/logo.png",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+52-1-646-947-3645",
+                "contactType": "customer service",
+                "areaServed": "MX",
+                "availableLanguage": "Spanish"
+            }
+        }
+    </script>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-pinksoft/30 text-gray-800">
 
 <!-- NAVBAR -->
-<header class="bg-primary shadow">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
-        <img src="../assets/images/logo.png" alt="Logo" class="h-12">
+<header class="bg-primary/95 backdrop-blur shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <img src="../assets/images/logo.png" alt="Productos Derbys Logo" class="h-14">
 
         <nav class="space-x-6 font-medium text-white">
             <a href="inicio.html" class="text-accent">Inicio</a>
-            <a href="productos.html" class="hover:text-accent">Productos</a>
-            <a href="nosotros.html" class="hover:text-accent">Nosotros</a>
-            <a href="contacto.html" class="hover:text-accent">Contacto</a>
+            <a href="productos.html" class="hover:text-accent transition">Productos</a>
+            <a href="nosotros.html" class="hover:text-accent transition">Nosotros</a>
+            <a href="contacto.html" class="hover:text-accent transition">Contacto</a>
         </nav>
     </div>
 </header>
 
-
 <!-- HERO -->
-<section class="bg-lightbg py-24 text-center">
-    <h1 class="text-5xl font-extrabold text-primary">
-        Caracol, Abulón y Botanas de Calidad Premium
-    </h1>
+<section class="relative overflow-hidden bg-gradient-to-br from-lightbg via-pinksoft to-lightbg py-28 text-center">
 
-    <p class="mt-6 text-lg max-w-2xl mx-auto text-muted">
-        Distribución confiable de caracol, abulón y botanas como cacahuates
-        y churros, ideales para restaurantes, tiendas y eventos.
-    </p>
+    <!-- Soft background accent -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-pinksoft/40 rounded-full blur-3xl"></div>
 
-    <a href="productos.html"
-       class="inline-block mt-8 bg-accent text-primary px-8 py-4 rounded-lg
-            text-lg font-semibold shadow hover:bg-secondary transition">
-        Ver Catálogo
-    </a>
+    <div class="relative z-10">
+        <div class="flex justify-center mb-8">
+            <img src="../assets/images/logo.png"
+                 alt="Productos Derbys"
+                 class="h-40 w-auto block">
+        </div>
+
+        <h1 class="text-5xl md:text-6xl font-extrabold text-primary tracking-tight">
+            Productos DERBYS
+        </h1>
+
+        <p class="mt-6 text-lg max-w-2xl mx-auto text-gray-700 leading-relaxed">
+
+        Productos Derbys es una marca registrada dedicada a la elaboración y
+            distribución de caracol, abulón y botanas en México.
+        </p>
+
+        <a href="productos.html"
+           class="inline-flex items-center gap-2 mt-10 bg-primary text-white px-10 py-4
+                  rounded-full text-lg font-semibold shadow-lg
+                  hover:shadow-xl hover:bg-primary/90 transition">
+            Ver Catálogo →
+        </a>
+    </div>
 </section>
-
 
 <!-- CATEGORIES -->
-<section class="max-w-7xl mx-auto py-20 px-6 grid md:grid-cols-3 gap-10">
+<section class="">
+    <div class="max-w-7xl mx-auto py-24 px-6 grid md:grid-cols-3 gap-10">
 
-    <!--Caracol-->
-    <div class="bg-white shadow rounded-lg overflow-hidden text-center">
+        <!-- Caracol -->
+        <div class="bg-white rounded-2xl overflow-hidden text-center
+                    shadow-sm hover:shadow-xl transition-shadow duration-300">
 
-        <!-- Portrait image container -->
-        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 flex items-center justify-center">
-            <img
-                    src="../assets/images/caracol.png"
-                    alt="Caracol"
-                    class="h-full w-auto object-contain"
-            />
+            <div class="aspect-[3/4] w-full overflow-hidden
+                        bg-gradient-to-b from-gray-100 to-gray-50
+                        flex items-center justify-center">
+                <img src="../assets/images/caracol.png"
+                     alt="Caracol enlatado Derbys"
+                     class="h-full w-auto object-contain">
+            </div>
+
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold text-primary tracking-tight">
+                    Caracol
+                </h3>
+                <p class="mt-3 text-muted text-sm leading-relaxed">
+                    Caracol DERBYS en lata, presentación en caja con 24 latas,
+                    ideal para restaurantes y negocios.
+                </p>
+            </div>
         </div>
 
-        <!-- Content -->
-        <div class="p-6">
-            <h3 class="text-2xl font-bold text-primary">Caracol</h3>
-            <p class="mt-2 text-muted">
-                Caracol derbys caja de 24 latas
-            </p>
+        <!-- Abulón -->
+        <div class="bg-white rounded-2xl overflow-hidden text-center
+                    shadow-sm hover:shadow-xl transition-shadow duration-300">
+
+            <div class="aspect-[3/4] w-full overflow-hidden
+                        bg-gradient-to-b from-gray-100 to-gray-50
+                        flex items-center justify-center">
+                <img src="../assets/images/abulon.jpg"
+                     alt="Abulón enlatado Derbys"
+                     class="h-full w-auto object-contain">
+            </div>
+
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold text-primary tracking-tight">
+                    Abulón
+                </h3>
+                <p class="mt-3 text-muted text-sm leading-relaxed">
+                    Abulón de cultivo DERBYS en lata, cuidadosamente seleccionado
+                    para garantizar calidad y sabor.
+                </p>
+            </div>
+        </div>
+
+        <!-- Botanas -->
+        <div class="bg-white rounded-2xl overflow-hidden text-center
+                    shadow-sm hover:shadow-xl transition-shadow duration-300">
+
+            <div class="aspect-[3/4] w-full overflow-hidden
+                        bg-gradient-to-b from-gray-100 to-gray-50
+                        flex items-center justify-center">
+                <img src="../assets/images/botanas.jpg"
+                     alt="Botanas Derbys"
+                     class="h-full w-auto object-contain">
+            </div>
+
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold text-primary tracking-tight">
+                    Botanas
+                </h3>
+                <p class="mt-3 text-muted text-sm leading-relaxed">
+                    Botanas DERBYS en presentación de 90 g, que incluyen churros
+                    de maíz, cacahuate japonés y rielitos.
+                </p>
+            </div>
         </div>
 
     </div>
-
-
-    <div class="bg-white shadow rounded-lg overflow-hidden text-center">
-
-        <!-- Portrait image container -->
-        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 flex items-center justify-center">
-            <img
-                    src="../assets/images/abulon.jpg"
-                    alt="Abulon"
-                    class="h-full w-auto object-contain"
-            />
-        </div>
-
-        <!-- Content -->
-        <div class="p-6">
-            <h3 class="text-2xl font-bold text-primary">Abulón</h3>
-            <p class="mt-2 text-muted">
-                Abulon de cultivo derbys caja de 24 latas
-            </p>
-        </div>
-
-    </div>
-
-
-    <div class="bg-white shadow rounded-lg overflow-hidden text-center">
-
-        <!-- Portrait image container -->
-        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 flex items-center justify-center">
-            <img
-                    src="../assets/images/botanas.jpg"
-                    alt="Botanas"
-                    class="h-full w-auto object-contain"
-            />
-        </div>
-
-        <!-- Content -->
-        <div class="p-6">
-            <h3 class="text-2xl font-bold text-primary">Botanas</h3>
-            <p class="mt-2 text-muted">
-                Botanas derbys
-                90g de producto
-                Churros de maiz ,cacahuate japones y rielito
-            </p>
-        </div>
-
-    </div>
-
 </section>
+
+<!-- FOOTER -->
 <div id="footer"></div>
 
 <script>
@@ -146,7 +186,6 @@
             document.getElementById('footer').innerHTML = html;
         });
 </script>
-
 
 </body>
 </html>

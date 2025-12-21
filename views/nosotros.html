@@ -1,62 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--Favicons-->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#28536F',   // Blue
-                        secondary: '#A7B255', // Olive
-                        accent: '#D5A70D',    // Gold
-                        lightbg: '#F3F092',   // Soft yellow
-                        muted: '#728E9D'      // Slate blue
+                        primary: '#28536F',
+                        secondary: '#A7B255',
+                        accent: '#D5A70D',
+                        lightbg: '#F3F092',
+                        muted: '#728E9D',
+                        pinksoft: '#C97A94'
                     }
                 }
             }
         }
     </script>
+
+    <!-- SEO -->
     <title>Nosotros | Productos Derbys</title>
+    <meta name="description"
+          content="Conoce la historia y misión de Productos Derbys, una marca con más de 11 años de experiencia en conservas y productos del mar en México.">
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-pinksoft/30 text-gray-800">
 
 <!-- NAVBAR -->
-<header class="bg-primary shadow">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
-        <img src="../assets/images/logo.png" alt="Logo" class="h-12">
+<header class="bg-primary/95 backdrop-blur shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <img src="../assets/images/logo.png" alt="Productos Derbys Logo" class="h-14">
 
         <nav class="space-x-6 font-medium text-white">
-            <a href="inicio.html" class="hover:text-accent">Inicio</a>
-            <a href="productos.html" class="hover:text-accent">Productos</a>
+            <a href="inicio.html" class="hover:text-accent transition">Inicio</a>
+            <a href="productos.html" class="hover:text-accent transition">Productos</a>
             <a href="nosotros.html" class="text-accent">Nosotros</a>
-            <a href="contacto.html" class="hover:text-accent">Contacto</a>
+            <a href="contacto.html" class="hover:text-accent transition">Contacto</a>
         </nav>
     </div>
 </header>
 
-<section class="max-w-4xl mx-auto py-20 px-6">
-    <h1 class="text-4xl font-bold mb-6">Nuestra Mision</h1>
-    <p class="text-lg text-gray-700 leading-relaxed">
-        <em>Productos Derbys</em> es una marca registrada dedicada a la elaboración y promoción de conservas y productos del mar de alta calidad.
-        Contamos con más de 11 años de experiencia en el mercado nacional, ofreciendo productos que cumplen con los más altos estándares de calidad y sabor.<br><br>
-
-        Entre nuestros productos destacados se encuentra el caracol enlatado DERBYS, reconocido por su excelente calidad y aceptación en el mercado.
-        Además, ofrecemos Atún Ahumado DERBYS en lata con abre fácil, un producto práctico y confiable, ideal para consumidores que buscan conveniencia sin sacrificar el sabor.<br><br>
-
-        Nuestro compromiso es brindar productos cuidadosamente elaborados, utilizando procesos que garantizan frescura,
-        seguridad y satisfacción para nuestros clientes, fortaleciendo así la confianza en la marca DERBYS a lo largo de los años.
-    </p>
+<!-- HEADER -->
+<section class="bg-gradient-to-br from-lightbg via-pinksoft/40 to-lightbg py-24 text-center">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-primary tracking-tight">
+        Nuestra Misión
+    </h1>
 </section>
+
+<!-- CONTENT -->
+<section class="max-w-4xl mx-auto py-24 px-6">
+
+    <div class="bg-white/90 backdrop-blur rounded-2xl shadow-lg p-10 md:p-14">
+
+        <p class="text-lg text-gray-700 leading-relaxed">
+            <em class="font-semibold text-primary">Productos Derbys</em> es una marca registrada
+            dedicada a la elaboración y promoción de conservas y productos del mar de alta calidad.
+            Contamos con más de <strong>11 años de experiencia en el mercado nacional</strong>,
+            ofreciendo productos que cumplen con los más altos estándares de calidad y sabor.
+        </p>
+
+        <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+            Entre nuestros productos destacados se encuentra el <strong>caracol enlatado DERBYS</strong>,
+            reconocido por su excelente calidad y amplia aceptación en el mercado.
+            Además, ofrecemos <strong>Atún Ahumado DERBYS en lata con abre fácil</strong>,
+            un producto práctico y confiable, ideal para quienes buscan conveniencia
+            sin sacrificar el sabor.
+        </p>
+
+        <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+            Nuestro compromiso es brindar productos cuidadosamente elaborados, utilizando
+            procesos que garantizan frescura, seguridad y satisfacción para nuestros clientes,
+            fortaleciendo así la confianza en la marca DERBYS a lo largo de los años.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
 <div id="footer"></div>
 
 <script>
